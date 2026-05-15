@@ -1,0 +1,115 @@
+PROBLEM STATEMENT: Write a restaurant menu and total payment program.
+Welcome the user to the restaurant.
+In a  loop ask the user to input a menu item or stop to quit. 
+Each menu item should have a price that is added up. When the user types stop, add up their item total and then display the total. 
+After displaying the item total ask for the tip percentage, calculate the tip percentage and then display their total bill with a price breakdown. (just like a receipt)
+Then display a thank you and goodbye.
+
+NOUNS: restaurant,menu item, price, item total, total bill
+VERBS: welcome, ask, input, add, display, calculate, breakdown
+
+
+DEFINING DIAGRAM:
+INPUTS: menu item, stop, tip percentage
+
+PROCESSING:
+Prompt user for input
+IF input is menu item, add to total, continue loop
+IF input is stop, terminate loop 
+Display user input
+Display total without tip
+Ask for tip percentage
+Calculate tip and total bill
+Display total bill 
+
+OUTPUTS:
+Display user input
+Display total without tip
+Display total with tip
+
+
+
+SOLUTION ALGORITHM:
+BillCalculation
+WHILE entry = menuitem
+  add price
+  ask for another entry
+IF entry = stop
+  stop loop
+END WHILE
+END IF
+Add entries
+Display entrytotal
+Prompt for tip
+Calculate entry total plus tip
+OUTPUT entries, totalbill, total before tip
+
+VARIABLES: MenuItem, tip percentage
+
+TEST CASE 1:
+
+  INPUT VALUES: Hamburger, fries, 10
+  EXPECTED RESULT: 
+  You entered 2 menu items
+  Here is your receipt
+  Fries - $4.99
+  Hamburger - $8.99
+  Your total is $13.98
+  You tipped: 10%
+  Your total with tip is $15.38
+  ACTUAL RESULT:
+  You entered 2 menu items
+  Here is your receipt
+  Fries - $4.99
+  Hamburger - $8.99
+  Your total is $13.98
+  You tipped: 10%
+  Your total with tip is $15.38
+  
+  TEST CASE 2:
+
+  INPUT VALUES: CheeseBurger, fries, spinach dip, wings, 35
+  EXPECTED RESULT:
+  You entered 4 menu items
+  Here is your receipt
+  CheeseBurgerFries - $9.99
+  Fries - $4.99
+  Spinach Dip - $4.99
+  Wings - $11.50
+  Your total is $30.47
+  You tipped: 35%
+  Your total with tip is $41.13
+  ACTUAL RESULT:
+  You entered 4 menu items
+  Here is your receipt
+  CheeseBurgerFries - $9.99
+  Fries - $4.99
+  Spinach Dip - $4.99
+  Wings - $11.50
+  Your total is $30.47
+  You tipped: 35%
+  Your total with tip is $41.13
+  
+  TEST CASE 3:
+
+  INPUT VALUES: wings 
+  EXPECTED RESULT: You entered an invalid item. Try again or type done to stop order
+  ACTUAL RESULT: You entered an invalid item. Try again or type done to stop order
+  
+  TEST CASE 4:
+
+  INPUT VALUES: done 10
+  EXPECTED RESULT:
+  You entered 0 menu items
+  Here is your reciept
+  Your total is $0
+  You tipped: 10%
+  Your total with tip is $0.00
+  ACTUAL RESULT:
+  You entered 0 menu items
+  Here is your reciept
+  Your total is $0
+  You tipped: 10%
+  Your total with tip is $0.00
+  
+  
